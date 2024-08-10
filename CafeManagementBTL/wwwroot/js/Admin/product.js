@@ -16,15 +16,15 @@ function loadData() {
             {
                 data: null,
                 render: function (data, type, row) {
-                    var html = `<a href="/admin/product/edit/${data.id}" class="btn btn-sm btn-primary" style="margin:10px">
+                    var html = `<div style="display:flex">
+                        <a href="/admin/product/edit/${data.id}" class="btn btn-sm btn-primary" style="margin:10px;display: inline-block">
                        <i class="bi bi-pencil-square"></i> Edit
                     </a>
-                    <a href="/admin/product/delete/${data.id}" class="btn btn-sm btn-primary">
+                    <a style="display: inline-block" href="/admin/product/delete/${data.id}" class="btn btn-sm btn-primary">
                        <i class="bi bi-trash"></i></span>Delete
-                    </a>`;
+                    </a>
+                    </div>`;
                     return html;
-                    
-
                     //`<a style="margin-right:10px" href="/admin/product/edit/${data.id}" class="btn btn-sm btn-primary"> <i class="bi bi-pencil-square"></i> Edit</a><a href="/admin/product/delete/${data.id}" class="btn btn-sm btn-primary"><i class="bi bi-trash"></i></span>Delete</a>;
                     
                 },
