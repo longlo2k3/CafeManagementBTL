@@ -12,7 +12,6 @@ function loadData() {
         columns: [
             { data: 'id' },
             { data: 'name' },
-            { "data":"verifikey" } ,
             {
                 data: null,
                 render: function (data, type, row) {

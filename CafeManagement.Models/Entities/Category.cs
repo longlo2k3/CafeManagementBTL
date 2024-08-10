@@ -14,9 +14,6 @@ namespace CafeManagement.Models.Entities
         [Required]
         public string Name { get; set; } = string.Empty;
 
-        [Required]
-        [RegularExpression(@"^\d[A-Za-z0-9]{9}$", ErrorMessage = "VerifiKey must be 10 characters long and start with a digit.")]
-        public string VerifiKey { get; set; }
 
     }
 }
